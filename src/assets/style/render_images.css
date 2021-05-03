@@ -1,0 +1,401 @@
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel XL ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Windows Phone ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* ----------- Galaxy Tab 2 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy Tab S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Nexus 7 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Nexus 9 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 8.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Non-Retina Screens ----------- */
+/* ----------- Retina Screens ----------- */
+/* ----------- Apple Watch ----------- */
+/* ----------- Moto 360 Watch ----------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.render_images {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 3em;
+}
+
+.render_images .cards {
+  width: 100%;
+  -webkit-column-count: 4;
+          column-count: 4;
+  -webkit-column-gap: 1;
+          column-gap: 1;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .render_images .cards {
+    -webkit-column-count: initial;
+            column-count: initial;
+    -webkit-column-gap: initial;
+            column-gap: initial;
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.render_images .cards .card {
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+  margin-bottom: .7em;
+  overflow: hidden;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.render_images .cards .card:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.render_images .cards .card:hover .image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.render_images .cards .card:hover .foot {
+  -webkit-animation: scale-up-ver-bottom 0.4s both;
+          animation: scale-up-ver-bottom 0.4s both;
+}
+
+@-webkit-keyframes scale-up-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.render_images .cards .card .card_head {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.render_images .cards .card .card_head .button {
+  padding: .3em .5em;
+  height: 2.5em;
+}
+
+.render_images .cards .card .card_head .button:nth-child(1) {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.render_images .cards .card .card_head .button:nth-child(1) span {
+  margin-right: .5em;
+}
+
+.render_images .cards .card .card_head .button:nth-child(1) i {
+  color: #f2135d;
+}
+
+.render_images .cards .card .image {
+  width: 100%;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  border-radius: 10px;
+}
+
+.render_images .cards .card .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+.render_images .cards .card .foot {
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  background: linear-gradient(183deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.473));
+  border-radius: 0 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  opacity: 0;
+}
+
+.render_images .cards .card .foot .text {
+  margin-left: 1em;
+}
+
+.render_images .cards .card .foot .text h1 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.render_images .cards .card .foot .text p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -.5em;
+}
+
+.render_images .render_cards_foot {
+  width: 100%;
+  height: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.render_images .render_cards_foot .cont {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .render_images .render_cards_foot .cont {
+    width: 100%;
+  }
+}
+
+.render_images .render_cards_foot .cont .cont_button {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=render_images.css.map */

@@ -1,0 +1,441 @@
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel XL ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Windows Phone ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* ----------- Galaxy Tab 2 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy Tab S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Nexus 7 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Nexus 9 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 7" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Kindle Fire HD 8.9" ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Non-Retina Screens ----------- */
+/* ----------- Retina Screens ----------- */
+/* ----------- Apple Watch ----------- */
+/* ----------- Moto 360 Watch ----------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.post_story {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 3em;
+  background: #fff;
+}
+
+.post_story .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .post_story .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.post_story .container .left {
+  width: 40%;
+  height: 90vh;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .post_story .container .left {
+    width: 100%;
+    height: initial;
+  }
+}
+
+.post_story .container .left .inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.post_story .container .left .inputs .input1 {
+  width: 100%;
+}
+
+.post_story .container .left .inputs .input2 {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.post_story .container .left .inputs .input3 {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.post_story .container .left .inputs .input3 p {
+  font-weight: 600;
+  font-size: .9em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.post_story .container .left .inputs .input5 {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.post_story .container .left .inputs .input5 .textarea__one {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.post_story .container .left .inputs .post_button {
+  font-size: 1rem;
+  margin-top: 1em;
+}
+
+.post_story .container .right {
+  width: 58%;
+}
+
+@media (max-width: 768px) {
+  .post_story .container .right {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+
+.post_story .container .right .right_content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1em;
+}
+
+@media (max-width: 768px) {
+  .post_story .container .right .right_content {
+    padding: 0;
+  }
+}
+
+.post_story .container .right .right_content .right_left {
+  width: 100%;
+}
+
+.post_story .container .right .right_content .right_left .image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.post_story .container .right .right_content .right_left .image:hover img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.post_story .container .right .right_content .right_left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.post_story .container .right .right_content .right_left .image_placeholder {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.post_story .container .right .right_content .right_left .image_placeholder .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post_story .container .right .right_content .right_left .image_placeholder .text i {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post_story .container .right .right_content .right_left .image_placeholder .text p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post_story .container .right .right_content .right_right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2em;
+}
+
+.post_story .container .right .right_content .right_right .post_time {
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.post_story .container .right .right_content .right_right .post_time span {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post_story .container .right .right_content .right_right .post_title {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post_story .container .right .right_content .right_right .author {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+}
+
+.post_story .container .right .right_content .right_right .author p {
+  font-weight: 600;
+  margin-left: 1em;
+  font-size: 1rem;
+}
+
+.post_story .container .right .right_content .right_right div {
+  font-size: .99em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: .2em;
+}
+/*# sourceMappingURL=post_story.css.map */

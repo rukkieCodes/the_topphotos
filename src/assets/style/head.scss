@@ -1,0 +1,126 @@
+@import "./settings/mediaQuery";
+@import "./settings/reset";
+
+.head {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 1rem;
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                h1 {
+                    color: #4169e1;
+                    font-size: 3rem;
+                    font-weight: 100;
+                    letter-spacing: 10px;
+                }
+
+                p {
+                    color: #fff;
+                    width: 50%;
+                    margin-top: 2em;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+                }
+
+                .search {
+                    width: 100%;
+                    height: 3em;
+                    margin-top: 2em;
+
+                    @include mobile {
+                        width: 100%;
+                    }
+
+                    .input {
+                        width: 70%;
+                        height: 100%;
+                        position: relative;
+
+                        @include mobile {
+                            width: 100%;
+                        }
+
+                        button {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            width: 3em;
+                            height: 100%;
+                            outline: none;
+                            border-radius: 10px;
+                            background: #ebebeb;
+                            border: none;
+                            transition: .5s ease-in-out;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #4169e1;
+                            }
+
+                            &:focus {
+                                background: #4169e1;
+                                color: #fff;
+                            }
+
+                            i {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        input {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            outline: none;
+                            background: #fff;
+                            border: none;
+                            border-radius: 10px;
+                            padding-left: 4em;
+                            color: rgba(0, 0, 0, 0.6);
+                            font-weight: 600;
+                            font-size: 1rem;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 30%;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
